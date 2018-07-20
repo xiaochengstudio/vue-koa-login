@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import store from '../store/index';
-import HelloWorld from '@/components/HelloWorld';
+import home from '@/components/home';
 import login from '@/components/login';
 import register from '@/components/register'
 
@@ -12,14 +12,14 @@ const router = new Router({
   routes: [{
     path: '/',
     name:'home',
-    component:HelloWorld,
+    component:home,
     meta: {
       requiresAuth:true
     }
   },{
-    path: '/HelloWorld',
-    name: 'HelloWorld',
-    component: HelloWorld,
+    path: '/home',
+    name: 'home',
+    component: home,
   },
   {
   path: '/login',
