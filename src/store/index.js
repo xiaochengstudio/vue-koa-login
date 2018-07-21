@@ -9,7 +9,7 @@ const state = {
   username: ''
 };
 
-const mutation = {
+const mutations = {
   LOGIN: (state, data) => {
     //更改token的值
     state.token = data;

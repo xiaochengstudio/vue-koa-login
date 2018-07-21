@@ -1,8 +1,12 @@
+// Template version: 1.3.1
+// see http://vuejs-templates.github.io/webpack for documentation.
+
 const path = require('path')
 
 module.exports = {
   dev: {
     env: require('./dev.env'),
+    // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     // Various Dev Server settings
@@ -31,6 +35,7 @@ module.exports = {
 
     cssSourceMap: true
   },
+
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../dist/index.html'),

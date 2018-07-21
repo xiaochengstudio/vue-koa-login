@@ -43,7 +43,7 @@ export default {
     return instance.post('/api/register', data);
   },
   //用户登录
-  userLoing(data) {
+  userLogin(data) {
     return axios.post('/api/login', data);
   },
   //获取用户
